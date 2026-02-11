@@ -1,14 +1,414 @@
-body{
-   
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* RESET */ 
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow: hidden;
 }
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 38px;
+  left: -1px;
+  height: 145px;
+  background-color: transparent;
+}
+
+/* CSS de la page d'accueil */ 
+
+.page-d-accueil{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.page-d-accueil .fond{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(/assets/Fond.jpg);
+  background-size: 100% 100%;
+  background-position: center;
+  z-index: -1;
+}
+
+.page-d-accueil .header {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 38px;
+  left: -1px;
+  height: 145px;
+  background-color: transparent;
+}
+
 
 h1{
     
+    top: 222px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 96px;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    white-space: nowrap;
 }
 
-button{
-    background-color: #E31B23;
-    height: 92px;
-    width: 471px;
+.sous-titre {
+    text-align: center;
+    color: #ffffff;
+    font-size: 40px;
+    font-family: "Lora", serif;
+    font-weight: 700;
+    font-style: normal;
+    margin-top: 0;
+}
+
+.sous-titre span {
+    color: #FFC064; 
+}
+
+.conteneur-comptoir{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 120px;
+    width: 100%;
+    position: relative;
+    z-index: 5;
+}
+
+.boîte-principale {
+  width: 266px;
+  height: auto;
+  margin-bottom: -40px;
+  z-index: 2;
+  position: relative;
+  
+}
+
+.comptoir-wrapper {
+    position: relative;
+    width: 905px;
+    max-width: 90%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.comptoir-en-bois{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+
+.page-d-accueil .CTA {
+  position: absolute;
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  margin-top: 25px;
+  width: 471px;
+  height: 92px;
+  max-width: 80%;
+  background-color: #e31b23;
+  color: #ffffff;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 64px; 
+  border-radius: 10px;
+  border-color: #e31b23;
+  box-shadow: 0px 10px 4px #00000040;
+  cursor: pointer; 
+  z-index: 10;
+  transition: background 0.3s;
+  
+ 
+  
+}
+
+.CTA:hover {
+    background-color: #FFC064;
+    color: black;
+}
+
+.CTA .text-wrapper{
+    width: 100%;
+    text-align: center;
+
+}
+
+.boîte-décor {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 200px; /* Ajusté pour être proportionnel */
+    height: auto;
+}
+
+
+.footer {
+    margin-top: auto; 
+    width: 100%;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.8);
+    font-family: "Lora", serif;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+/* CSS formulaire façon pop-up */
+
+.popup-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Le conteneur du formulaire */
+.popup-container {
+    background-color: #000;
+    border: 2px solid #FFC064;
+    border-radius: 6px;
+    padding: 40px;
+    width: 728px;
+    max-width: 95%;
+    box-shadow: 0 0 20px rgba(0,0,0,0.8);
+    box-sizing: border-box;
+    transform: translate(-50%, -50%) scale(0.8);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    box-shadow:(0px 10px 50px 0px rgba(255, 138, 61, 0.25)); 
     
 }
+
+h2 {
+    color: #FFC064;
+    font-family: "Bebas Neue", sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 64px;
+    margin-top: 0;
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+}
+
+/* Les groupes de champs */
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* Les labels (nom, prénom...) */
+label {
+    color: #ffffff;
+    font-family: "Lora", serif;
+    font-size: 38px;
+    display: block;
+    margin-bottom: 15px;
+    margin-top: 8px;
+}
+
+/* Les champs de saisie (inputs) */
+.form-group input, .form-group select {
+    width: 100%;
+    height: 60px;
+    padding: 10px;
+    background-color: #ffffff;
+    border: none;
+    font-size: 30px;
+    font-family: "Lora", serif;
+    font-weight: 400;
+    color: #000000;
+    box-sizing: border-box;
+}
+
+/* Placeholder (le texte gris à l'intérieur des champs) */
+::placeholder {
+    color: #999999;
+    opacity: 60%;
+}
+
+
+/* Cible le texte à l'intérieur des menus déroulants */
+select option {
+    font-family: "Lora", serif;
+    font-size: 30px;            
+    background-color: #ffffff;     
+    
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.checkbox input {
+    margin-right: 10px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+}
+
+.checkbox label {
+    font-size: 20px;
+    font-family: "Lora", serif;
+    margin: 0;
+    color: #ffffff 
+}
+
+.checkbox-group strong {
+    color: #fff;
+}
+
+button {
+    width: 270px;
+    height: 119px;
+    background-color: #e31b23; /* Rouge vif */
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 64px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: back-ground 0.3s;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;  
+}
+
+button:hover {
+    background-color: #FFC064; /* doré au survol */
+    color: black; /* texte noir au survol */
+}
+
+
+/* CSS pour le 3ème écran: la page de jeu */
+
+.page-de-jeu{ /* conteneur principal*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+
+}
+
+.page-de-jeu .fond{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(/assets/Fond.jpg);
+  background-size: 100% 100%;
+  background-position: center;
+  z-index: -1; /* pour que le fond reste bien au fond*/
+}
+
+.titre-jeu{
+    margin-top: -55px;
+}
+
+.sous-titre-jeu{
+    text-align: center;
+    color: #ffffff;
+    font-size: 40px;
+    font-family: "Lora", serif;
+    font-weight: 700;
+    font-style: normal;
+    margin-top: -30px;
+}
+
+.sous-titre-jeu span{ /* mot "mystère" en doré */
+    color: #FFC064;
+}
+
+.étagères{
+    position: relative; /* position relative car parent de référence */
+    width: 600px;
+    max-width: 95%;
+    margin-top: -81px;
+    margin-bottom: 50px;
+    margin-left: auto; /* centre l'étagère */
+    margin-right: auto; /* centre l'étagère */
+}
+
+.étagères > img{
+    width: 100%;
+    height: auto;
+    display: block;
+    filter: drop-shadow(0 50px 4px rgba(0,0,0,0.4));
+
+}
+
+.boîtes{
+    position: absolute; /* Se superpose à son parent */
+    justify-content: center;
+    top: 140px;
+    bottom: 35px;
+    left: 160px;
+    right: 160px;
+    box-sizing: border-box; 
+    /* Création de la grille (2 colonnes, 6 rangées) */
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: repeat(6, 1fr); /* 6 rangées égales */
+    padding: 0; 
+    column-gap: 0;
+    row-gap: 5px;
+
+}
+
+/* Boîtes des étagères, tournées en bouton pour le jeu */
+.btn-boîte {
+    background: none;
+    border: none;
+    width: 135px;
+    height: 70%;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: flex-end; /* Pose la boîte en bas de sa case */
+    justify-content: center;
+    transition: transform 0.2s;
+}
+
+.btn-boîte:hover{
+    background: transparent;
+}
+
+.btn-boîte img {
+    max-width: 90%;
+    max-height: 95%;
+    width: 95%;
+    filter: drop-shadow(0 5px 4px rgba(0,0,0,0.5));
+}
+
+
+

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Footlocker</title>
+</head>
+</head>
+<div>
+
+    <div class="popup-wrapper">
+        <div class =popup-container>
+            <h2>AVANT DE COMMENCER...</h2>
+
+            <form class ="popup-form" action="/html/page-jeu.html">  <!--Une fois les champs du formulaire remplis, le CTA nous dirige vers la page du jeu-->
+                <div class="form-group">
+                    <label for="nom">Nom</label>
+                    <input type="text" id="nom" placeholder="Entrez votre nom" required>
+
+                    <label for="prénom">Prénom</label>
+                    <input type="text" id="prénom" placeholder="Entrez votre prénom" required> 
+                
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Entrez votre email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for ="marque">Marque préférée</label>
+                    <select id="marque">
+                        <option value="">Sélectionner</option>
+                        <option value="nike">Nike</option>
+                        <option value="jordan">Jordan</option>
+                        <option value="adidas">Adidas</option>
+                        <option value="newbalance">New Balance</option>
+                        <option value="puma">Puma</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for ="pointure">Pointure</label>
+                    <select id="pointure">
+                        <option value="">Sélectionner</option>
+                        <option value="36">EU 36</option>
+                        <option value="37">EU 37</option>
+                        <option value="38">EU 38</option>
+                        <option value="39">EU 39</option>
+                        <option value="40">EU 40</option>
+                        <option value="41">EU 41</option>
+                        <option value="42">EU 42</option>
+                    </select>
+                </div>
+
+                <div class="checkbox">
+                    <input type="checkbox" id="règlement" required>
+                    <label for ="réglement">J'accepte le<strong> règlement </strong>et la collecte de données.</label>
+                </div>
+    
+                <button type="submit">VALIDER</button>
+        </form>
+        </div>
+    </div>
+</body>
+</html>

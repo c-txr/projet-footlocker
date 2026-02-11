@@ -2,6 +2,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* VARIABLES */
+:root{
+    --color-red: #e31b23;
+    --color-gold:  #FFC064;
+    --color-white: #ffffff;
+    --font-title: "Bebas Neue", sans-serif;
+    --font-text: "Lora", serif;
+}
+
 /* RESET */ 
 body, html {
     margin: 0;
@@ -15,20 +24,18 @@ body, html {
   display: flex;
   justify-content: flex-start;
   margin-top: 38px;
-  left: -1px;
   height: 145px;
   background-color: transparent;
 }
 
 /* CSS de la page d'accueil */ 
-
 .page-d-accueil{
     display: flex;
     flex-direction: column;
     align-items: center;
     min-height: 100vh;
     position: relative;
-    font-family: "Bebas Neue", sans-serif;
+    font-family: var(--font-title);
 }
 
 .page-d-accueil .fond{
@@ -53,15 +60,13 @@ body, html {
   background-color: transparent;
 }
 
-
 h1{
-    
     top: 222px;
-    font-family: "Bebas Neue", sans-serif;
+    font-family: var(--font-title);
     font-weight: 400;
     font-style: normal;
     font-size: 96px;
-    color: #ffffff;
+    color: var(--color-white);
     text-align: center;
     text-transform: uppercase;
     white-space: nowrap;
@@ -69,16 +74,16 @@ h1{
 
 .sous-titre {
     text-align: center;
-    color: #ffffff;
+    color: var(--color-white);
     font-size: 40px;
-    font-family: "Lora", serif;
+    font-family: var(--font-text);
     font-weight: 700;
     font-style: normal;
     margin-top: 0;
 }
 
 .sous-titre span {
-    color: #FFC064; 
+    color: var(--color-gold); 
 }
 
 .conteneur-comptoir{
@@ -116,8 +121,6 @@ h1{
     display: block;
 }
 
-
-
 .page-d-accueil .CTA {
   position: absolute;
   display: flex; 
@@ -132,27 +135,24 @@ h1{
   width: 471px;
   height: 92px;
   max-width: 80%;
-  background-color: #e31b23;
-  color: #ffffff;
-  font-family: "Bebas Neue", sans-serif;
+  background-color: var(--color-red);
+  color: var(--color-white);
+  font-family: var(--font-title);
   font-size: 64px; 
   border-radius: 10px;
-  border-color: #e31b23;
+  border-color: var(--color-red);
   box-shadow: 0px 10px 4px #00000040;
   cursor: pointer; 
   z-index: 10;
   transition: background 0.3s;
-  
- 
-  
 }
 
 .CTA:hover {
-    background-color: #FFC064;
+    background-color: var(--color-gold);
     color: black;
 }
 
-.CTA .text-wrapper{
+.text-wrapper{
     width: 100%;
     text-align: center;
 
@@ -172,13 +172,12 @@ h1{
     width: 100%;
     text-align: center;
     color: rgba(255, 255, 255, 0.8);
-    font-family: "Lora", serif;
+    font-family: var(--font-text);
     font-size: 14px;
     margin-bottom: 20px;
 }
 
 /* CSS formulaire façon pop-up */
-
 .popup-wrapper{
     display: flex;
     justify-content: center;
@@ -189,7 +188,7 @@ h1{
 /* Le conteneur du formulaire */
 .popup-container {
     background-color: #000;
-    border: 2px solid #FFC064;
+    border: 2px solid var(--color-gold);
     border-radius: 6px;
     padding: 40px;
     width: 728px;
@@ -205,8 +204,8 @@ h1{
 }
 
 h2 {
-    color: #FFC064;
-    font-family: "Bebas Neue", sans-serif;
+    color: var(--color-gold);
+    font-family: var(--font-title);
     text-transform: uppercase;
     text-align: center;
     font-size: 64px;
@@ -222,8 +221,8 @@ h2 {
 
 /* Les labels (nom, prénom...) */
 label {
-    color: #ffffff;
-    font-family: "Lora", serif;
+    color: var(--color-white);
+    font-family: var(--font-text);
     font-size: 38px;
     display: block;
     margin-bottom: 15px;
@@ -235,10 +234,10 @@ label {
     width: 100%;
     height: 60px;
     padding: 10px;
-    background-color: #ffffff;
+    background-color: var(--color-white);
     border: none;
     font-size: 30px;
-    font-family: "Lora", serif;
+    font-family: var(--font-text);
     font-weight: 400;
     color: #000000;
     box-sizing: border-box;
@@ -253,9 +252,9 @@ label {
 
 /* Cible le texte à l'intérieur des menus déroulants */
 select option {
-    font-family: "Lora", serif;
+    font-family: var(--font-text);
     font-size: 30px;            
-    background-color: #ffffff;     
+    background-color: var(--color-white);     
     
 }
 
@@ -275,23 +274,23 @@ select option {
 
 .checkbox label {
     font-size: 20px;
-    font-family: "Lora", serif;
+    font-family: var(--font-text);
     margin: 0;
-    color: #ffffff 
+    color: var(--color-white);
 }
 
 .checkbox-group strong {
-    color: #fff;
+    color: var(--color-white);
 }
 
 button {
     width: 270px;
     height: 119px;
-    background-color: #e31b23; /* Rouge vif */
-    color: #ffffff;
+    background-color: var(--color-red); 
+    color: var(--color-white);
     border: none;
     border-radius: 10px;
-    font-family: "Bebas Neue", sans-serif;
+    font-family: var(--font-title);
     font-size: 64px;
     text-transform: uppercase;
     cursor: pointer;
@@ -303,7 +302,7 @@ button {
 }
 
 button:hover {
-    background-color: #FFC064; /* doré au survol */
+    background-color: var(--color-gold); /* doré au survol */
     color: black; /* texte noir au survol */
 }
 
@@ -336,16 +335,16 @@ button:hover {
 
 .sous-titre-jeu{
     text-align: center;
-    color: #ffffff;
+    color: var(--color-white);
     font-size: 40px;
-    font-family: "Lora", serif;
+    font-family: var(--font-text);
     font-weight: 700;
     font-style: normal;
     margin-top: -30px;
 }
 
 .sous-titre-jeu span{ /* mot "mystère" en doré */
-    color: #FFC064;
+    color: var(--color-gold);
 }
 
 .étagères{
@@ -410,5 +409,110 @@ button:hover {
     filter: drop-shadow(0 5px 4px rgba(0,0,0,0.5));
 }
 
+/* RESPONSIVE (en cours d'affinement */ 
 
+/* Page d'accueil */
+
+@media (max-width: 600px){
+    h1{
+        font-size: 48px;
+    }
+
+    p.sous-titre{
+        font-size: 20px;
+    }
+
+    conteneur-comptoir{
+    margin-top: 120px;
+    width: 100%;
+    position: relative;
+    z-index: 5;
+}
+
+.boîte-principale {
+  width: 180px;
+  height: auto;
+  margin-bottom: -20px;
+  z-index: 2;
+  position: relative;
+  
+}
+
+.comptoir-wrapper {
+    position: relative;
+    width: 905px;
+    max-width: 90%;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    
+}
+
+
+.comptoir-en-bois{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+
+.page-d-accueil .CTA {
+  margin: 0;
+  margin-top: 95px;
+  width: 302px;
+  height: 82px;
+  max-width: 80%;
+  background-color: var(--color-red);
+  color: var(--color-white);
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 40px; 
+  border-radius: 10px;
+  border-color: var(--color-red);
+  box-shadow: 0px 10px 4px #00000040;
+
+}
+
+.boîte-décor{
+    display: none;
+}
+}
+
+/* Page de jeu */
+
+@media (max-width: 600px) {
+    .titre-jeu {
+        font-size: 48px;
+        margin-top: 35px;
+    }
+
+    .sous-titre-jeu {
+        font-size: 20px;
+        margin-top: -10px;
+    }
+
+    .étagères{
+        margin-top: -35px;
+    }
+
+    /* 2. On ajuste la zone de la grille sur le meuble qui a rétréci */
+    .boîtes {
+        /* On passe en % pour que ça suive l'image peu importe la taille du téléphone */
+        top: 18%;     
+        bottom: 8%; 
+        left: 15%;     /* On réduit les côtés pour donner plus de place aux boîtes */
+        right: 15%;
+        row-gap: 1px;  /* On serre un peu plus car l'écran est petit */
+    }
+
+    /* 3. On ajuste les boutons pour qu'ils ne débordent pas */
+    .btn-boîte {
+        width: 100%;   /* Le bouton prend toute sa case de grille */
+        height: 80%;   /* On ajuste la hauteur pour garder l'alignement */
+    }
+
+    .btn-boîte img {
+        width: 60%;    /* l'image reste centrée et visible */
+    }
+}
 

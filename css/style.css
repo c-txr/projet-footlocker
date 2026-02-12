@@ -514,3 +514,18 @@ button:hover {
     }
 }
 
+/* ANIMATIONS (à rajouter) */
+
+@keyframes secouer {
+    0% { transform: rotate(0deg); } /* position initiale de la boîte */
+    25% { transform: rotate(-3deg) scale(1.05); } /* pivote à gauche et effet grossissant */
+    50% { transform: rotate(3deg) scale(1.05); } /* pivote à droite */
+    75% { transform: rotate(-3deg) scale(1.05); }
+    100% { transform: rotate(0deg) scale(1.05); } /* revient à sa position initiale */
+}
+
+.btn-boîte:hover {
+    animation: secouer 0.3s ease-in-out infinite;
+    filter: brightness(1.1) drop-shadow(0 0 15px var(--color-gold));
+    z-index: 10;
+}

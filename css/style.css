@@ -182,7 +182,7 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 100vh;;
 }
 
 /* Le conteneur du formulaire */
@@ -306,6 +306,9 @@ button:hover {
     color: black; /* texte noir au survol */
 }
 
+button a:hover{
+    color: black;
+}
 
 /* CSS pour le 3ème écran: la page de jeu */
 
@@ -407,6 +410,294 @@ button:hover {
     max-height: 95%;
     width: 95%;
     filter: drop-shadow(0 5px 4px rgba(0,0,0,0.5));
+}
+
+/* POP-UP JACKPOT */
+.popup-container-jackpot{
+    background-color: #000;
+    border: 2px solid var(--color-gold);
+    border-radius: 6px;
+    padding: 40px;
+    width: 728px;
+    height: 994px;
+    max-width: 95%;
+    box-shadow: 0 0 20px rgba(0,0,0,0.8);
+    box-sizing: border-box;
+    transform: translate(-50%, -50%) scale(0.8);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    box-shadow:(0px 10px 50px 0px rgba(255, 138, 61, 0.25)); 
+    
+}
+.popup-container-jackpot h2 {
+    color: var(--color-white);
+    font-size: 96px;
+}
+.popup-container-jackpot > p{
+    color: var(--color-white);
+    text-align: center;
+    font-family: var(--font-text);
+    font-size: 32px;
+    margin-top: -25px;
+}
+.popup-container-jackpot > .p2{
+    font-size: 30px;
+    white-space: nowrap;
+}
+
+.popup-container-jackpot > p span{
+    color: var(--color-gold);
+}
+.ticket-container{
+    position: relative;
+}
+
+.ticket-jackpot{
+    display: flex;
+    margin: auto;
+
+}
+.jackpot{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #000;
+    font-size: 128px;
+    margin: 0;
+    font-family: var(--font-title);
+    white-space: nowrap;
+}
+.boîte-ouverte{
+    display: block;
+    margin: auto;
+    position: relative;
+    top: -25px;
+}
+
+.btn-récupérer {
+    width: 514px;
+    margin-top: -30px;
+}
+.btn-récupérer a {
+    color: var(--color-white);
+}
+
+/* POP-UP BIEN JOUÉ */
+
+.popup-container-victoire{
+    background-color: #000;
+    border: 2px solid var(--color-gold);
+    border-radius: 6px;
+    padding: 40px;
+    width: 728px;
+    height: 994px;
+    max-width: 95%;
+    box-shadow: 0 0 20px rgba(0,0,0,0.8);
+    box-sizing: border-box;
+    transform: translate(-50%, -50%) scale(0.8);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    box-shadow:(0px 10px 50px 0px rgba(255, 138, 61, 0.25)); 
+    
+}
+.popup-container-victoire h2{
+    font-size: 96px;
+    color: var(--color-white);
+}
+.popup-container-victoire > p {
+    color: var(--color-white);
+    text-align: center;
+    font-family: var(--font-text);
+    font-size: 26px;
+    margin-top: -25px;
+}
+.popup-container-victoire > p span{
+    color: var(--color-gold);
+}
+.ticket-argent{
+    display: flex;
+    margin: auto;
+}
+.essentiels{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #000;
+    font-size: 115px;
+    margin: 0;
+    font-family: var(--font-title);
+}
+
+.btn-obtenir{
+    width: 602px;
+    margin-top: -30px;
+}
+.btn-obtenir a {
+    color: var(--color-white);
+}
+
+/* POP-UP DÉFAITE */ 
+
+.popup-container-défaite{
+    background-color: #000;
+    border: 2px solid var(--color-gold);
+    border-radius: 6px;
+    padding: 40px;
+    width: 728px;
+    height: 994px;
+    max-width: 95%;
+    box-shadow: 0 0 20px rgba(0,0,0,0.8);
+    box-sizing: border-box;
+    transform: translate(-50%, -50%) scale(0.8);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    box-shadow:(0px 10px 50px 0px rgba(255, 138, 61, 0.25)); 
+    
+}
+.popup-container-défaite h2{
+    color: var(--color-white);
+    font-family: var(--font-title);
+    font-size: 90px;
+
+}
+.popup-container-défaite p{
+    color: var(--color-white);
+    font-family: var(--font-text);
+    font-size: 32px;
+    text-align: center;
+}
+.popup-container-défaite span{
+    color: var(--color-gold);
+}
+.boîte-ouverte-défaite{
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+
+}
+.btn-terminer{
+    width: 285px;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+.btn-terminer a{
+    color: var(--color-white);
+}
+
+/* Pop-up consolation */
+
+
+.popup-container-consolation{
+    background-color: #000;
+    border: 2px solid var(--color-gold);
+    border-radius: 6px;
+    padding: 40px;
+    width: 728px;
+    height: 994px;
+    max-width: 95%;
+    box-shadow: 0 0 20px rgba(0,0,0,0.8);
+    box-sizing: border-box;
+    transform: translate(-50%, -50%) scale(0.8);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    box-shadow:(0px 10px 50px 0px rgba(255, 138, 61, 0.25)); 
+    
+}
+.popup-container-consolation h2{
+    color: var(--color-white);
+    font-size: 90px;
+}
+.popup-container-consolation p{
+    color: var(--color-white);
+    font-size: 32px;
+    text-align: center;
+}
+.popup-container-consolation span{
+    color: var(--color-gold);
+}
+.popup-container-consolation .jackpot{
+    font-size: 125px;
+    color: black;
+}
+.btn-profiter{
+    width: 614px;
+    margin-top: -40px;
+}
+.btn-profiter a {
+    color: var(--color-white);
+}
+/* PAGE DE CONFIRMATION */
+
+.page-confirmation .fond {
+ position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../assets/Fond.jpg);
+  background-size: 100% 100%;
+  background-position: center;
+  z-index: -1;
+}
+
+.page-confirmation h1{
+    top: 222px;
+}
+
+h1 span {
+    color: var(--color-gold);
+    
+}
+
+.page-confirmation p{
+    color: var(--color-white);
+    font-size: 32px;
+    text-align: center;
+    margin-top: -60px;
+}
+
+.conteneur-comptoir2{
+    margin-top: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.objets-comptoir{
+    display: flex;
+    align-items: flex-end;
+    gap: 40px;
+    margin-bottom: -60px;
+    z-index: 2;
+}
+.text-wrapper2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 64px;
+    margin-top: 150px;
+    font-family: var(--font-title);
+    text-transform: uppercase;
+}
+ .CTA-retour{
+    
+    color: var(--color-white);
+    background-color: transparent;
+    border: 2px solid var(--color-red);
+    border-radius: 10px;
+    width: 421px;
+    padding: 5px 20px;
+
 }
 
 /* RESPONSIVE (en cours d'affinement */ 
@@ -528,4 +819,97 @@ button:hover {
     animation: secouer 0.3s ease-in-out infinite;
     filter: brightness(1.1) drop-shadow(0 0 15px var(--color-gold));
     z-index: 10;
+}
+
+/* Pop up jackpot */
+
+@media (max-width: 600px){
+    .popup-container-jackpot h2{
+        font-size: 70px;
+        margin-top: 57px;
+    }
+    .popup-container-jackpot p {
+        font-size: 18px;
+        margin-top: 20px;
+        
+    }
+    .popup-container-jackpot .p2 {
+        font-size: 18px;
+        margin-top: 25px;
+        white-space: wrap;
+    }
+    .ticket-jackpot{
+        width: 274px;
+        padding-top: 20px;
+    }
+    .popup-container-jackpot .jackpot{
+        font-size: 64px;
+        white-space: nowrap;
+        
+    }
+    .boîte-ouverte{
+        width: 284px;
+        height: 185px;
+        margin-top: 10px;
+    }
+    .btn-récupérer{
+        width: 300px;
+        height: 86px;
+        font-size: 40px;
+        margin-top: 131px;
+    }
+}
+
+/* Pop up victoire */
+
+@media (max-width: 600px){
+    .popup-container-victoire h2{
+        font-size: 70px;
+        margin-top: 57px;
+    }
+    .popup-container-victoire p {
+        font-size: 18px;
+        margin-top: 20px;
+        
+    }
+    .ticket-argent{
+        width: 274px;
+        padding-top: 20px;
+    }
+    .popup-container-victoire .essentiels{
+        font-size: 64px;
+        
+    }
+    .boîte-ouverte{
+        width: 284px;
+        height: 185px;
+        margin-top: 10px;
+    }
+    .btn-obtenir{
+        width: 306px;
+        height: 86px;
+        font-size: 38px;
+        margin-top: 131px;
+    }
+}
+
+/* Pop up défaite */
+
+@media (max-width: 600px){
+    .popup-container-défaite h2{
+        font-size: 65px;
+        margin-top: 57px;
+    }
+    .popup-container-défaite p {
+        font-size: 18px;
+        margin-top: 20px;
+        
+    }
+
+    .boîte-ouverte-défaite{
+        width: 293px;
+        height: 186px;
+        margin-top: 10px;
+    }
+
 }

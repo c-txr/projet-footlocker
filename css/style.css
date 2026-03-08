@@ -177,6 +177,13 @@ h1{
     margin-bottom: 20px;
 }
 
+.footer a {
+    color: #FFFFFF !important;    /* Force la couleur en blanc */
+    text-decoration: none;       /* Enlève le soulignement bleu */
+    font-family:'lora', sans-serif;
+    transition: 0.3s;
+}
+
 /* CSS formulaire façon pop-up */
 .popup-wrapper{
     display: flex;
@@ -283,6 +290,18 @@ select option {
     color: var(--color-white);
 }
 
+.cta-reglement {
+    color: var(--color-gold);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+    color: #FFFFFF !important;    /* Force la couleur en blanc */
+    text-decoration: none;       /* Enlève le soulignement bleu */
+    font-family:'lora', sans-serif;
+    transition: 0.3s;
+
+}
+
 button {
     width: 270px;
     height: 119px;
@@ -362,6 +381,8 @@ button a:hover{
 
 .étagères > img{
     width: 100%;
+    position: relative;
+    padding-bottom: 0%;
     height: auto;
     display: block;
     filter: drop-shadow(0 50px 4px rgba(0,0,0,0.4));
@@ -782,6 +803,7 @@ h1 span {
 
     .étagères{
         margin-top: -35px;
+
     }
 
     /* 2. On ajuste la zone de la grille sur le meuble qui a rétréci */

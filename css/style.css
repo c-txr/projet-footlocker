@@ -412,6 +412,7 @@ button a:hover{
     filter: drop-shadow(0 5px 4px rgba(0,0,0,0.5));
 }
 
+
 /* POP-UP JACKPOT */
 .popup-container-jackpot{
     background-color: #000;
@@ -633,6 +634,23 @@ button a:hover{
 }
 .btn-profiter a {
     color: var(--color-white);
+}
+
+/* Mise en place de la superposition des pop-up */
+.overlay{
+    display: none; /* caché par défaut */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7); /* Fond sombre */
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+.overlay.active{
+    display: flex !important; 
 }
 /* PAGE DE CONFIRMATION */
 

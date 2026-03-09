@@ -33,6 +33,57 @@
             </div>
         </div>
      </div>
-
+     <!--Toutes mes pop-up en fonction du résultat de la boîte mystère sélectionnée-->
+        <!--Pop-up Jackpot-->
+    <div id="pop-up-jackpot" class="popup-wrapper overlay">
+        <div class =popup-container-jackpot>
+            <h2>INCROYABLE !</h2>
+            <p>Tu viens de décrocher le <span>JACKPOT</span>.</p>
+            <p class="p2">Tu remportes la paire de ton choix en magasin.</p>
+            <div class="ticket-container">
+                <p class="jackpot">JACKPOT !</p>
+                <img class="ticket-jackpot" src="./assets/jackpot-ticket.png" alt="Ticket en or">
+            </div>
+            <img class="boîte-ouverte" src="./assets/boîte-ouverte.svg" alt="Boîte Foot Locker ouverte">
+            <button class="btn-récupérer"><a href="page-confirmation.html">RÉCUPÉRER MA PAIRE</a></button>
+        </div>
+    </div>
+    <!--Pop-up victoire-->
+    <div id="pop-up-victoire" class="popup-wrapper overlay">
+        <div class =popup-container-victoire>
+            <h2>BIEN JOUÉ !</h2>
+            <p>Perfectionne ton look. Fais ton choix parmi la sélection en magasin: une <span>casquette</span>, un <span>pack de chaussettes</span> ou le <span>kit d’entretien + lacets</span>.</p>
+            <div class="ticket-container">
+                <img class="ticket-argent" src="./assets/ticket-argent.png" alt="Ticket en argent">
+                <p class="essentiels">ESSENTIELS</p>
+            </div>
+            <img class="boîte-ouverte" src="./assets/boîte-ouverte.svg" alt="Boîte Foot Locker ouverte">
+            <button class="btn-obtenir"><a href="page-confirmation.html">OBTENIR MES ESSENTIELS</a></button>
+        </div>
+    </div>
+    <!--Pop-up consolation-->
+    <div id="pop-up-consolation" class="popup-wrapper overlay">
+        <div class =popup-container-consolation>
+            <h2>OFFRE DÉBLOQUÉE !</h2>
+            <p>Une belle surprise. Profite de <span>-15%</span> immédiats sur l'article de ton choix en magasin.</p>
+            <div class="ticket-container">
+                <span class="jackpot pourcentage">-15%</span>
+                <img class="ticket-jackpot" src="./assets/ticket-bronze.png" alt="Ticket en bronze">
+            </div>
+            <img class="boîte-ouverte" src="./assets/boîte-ouverte.svg" alt="Boîte Foot Locker ouverte">
+            <button class="btn-profiter"><a href="page-confirmation.html">EN PROFITER MAINTENANT</a></button>
+        </div>
+    </div>
+    <!--Pop-up défaite-->
+    <div id="pop-up-défaite" class="popup-wrapper overlay">
+        <div class =popup-container-défaite>
+            <h2>DOMMAGE...</h2>
+            <p>Cette boîte est malheureusement <span>vide</span>.</p>
+            <p>Merci d'avoir participé ! Retente ta chance dès demain.</p>
+            <img class="boîte-ouverte-défaite" src="./assets/boîte-ouverte-défaite.svg" alt="Boîte Foot Locker ouverte">
+            <button class="btn-terminer"><a href="page-confirmation.html">TERMINER</a></button>
+        </div>
+    </div>
+    <script src="/main.js"></script>
     </body>
 </html>
